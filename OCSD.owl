@@ -1,0 +1,4581 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://www.obrnit.info/OCSD-owlfiles/OCSD"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://www.obrnit.info/OCSD-owlfiles/OCSD"
+     versionIRI="https://www.obrnit.info/OCSD-owlfiles/OCSD">
+    <Prefix name="" IRI="http://www.semanticweb.org/umroot/ontologies/2017/10/untitled-ontology-65"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="Helth" IRI="http://www.semanticweb.org/umroot/ontologies/2017/10/untitled-ontology-65#Helth/"/>
+    <Prefix name="Surface" IRI="http://www.semanticweb.org/umroot/ontologies/2017/10/untitled-ontology-65#Surface/"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="Malfunction" IRI="http://www.semanticweb.org/umroot/ontologies/2017/10/untitled-ontology-65#Malfunction/"/>
+    <Prefix name="untitled-ontology-65" IRI="http://www.semanticweb.org/umroot/ontologies/2017/10/untitled-ontology-65#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://github.com/OCSD-OWL/OCSD</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">OCSD V1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#comment"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Please report any errors to the following email: f_bahrei@encs.concordia.ca.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Fardin Bahreini, Concordia University</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#date"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">May, 2018</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">March, 2022</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#preferredNamespaceUri"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">ONTOLOGY FOR CONCRETE SURFACE DEFECTS AND AS-INSPECTED MODELING
+Authors:
+Fardin Bahreini
+Amin Hammad</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#preferredNamespaceUri"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">https://www.obrnit.info/OCSD-owlfiles/OCSD</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#scope"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ontology for Concrete Surface Defects (OCSD)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AbrasionAndWearEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acoustic-based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcrylicCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcrylicConcreteSealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActualCause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AddingConcreteLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AddingFiber-reinforcedPolymer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Addition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AggregateExpansion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgingDeterioration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alkali-silicaReaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#As-inspectedModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BIMModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Binoculars"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BiologicalGrowthStain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BituminousCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BondingStrength"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bughole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CastingInInappropriateWeatherConditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CauseAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemical-based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalAttack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalStain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chloride"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChlorinatedRubberCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clustering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColdJoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollectedData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ColorimetricTestStrips"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComponentID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ComputerVision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcreteCoverMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcreteSurfaceSealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorrosionProbabilityEstimation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoverMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackFilling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackMeasuringDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackMeasuringMagnifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackMeasuringMicroscope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackMonitorGauge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrackWidthMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuringConcreteRepair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefectDefinition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefectModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefectType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Delamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DelaminationSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DepthCamera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DestructiveTesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DetachingLooseCover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiagnosisMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiagnosisProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiagnosisReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DiagnosisTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalStrainGaugeDeformationMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disintegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisintegrationSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Durability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DustStain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EarlyRemovalOfFormwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EdgeDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Effect_of_Chemical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Effect_of_Liquid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Efflorescence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrochemical-based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmergencyLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalProblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environmental_Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpoxyCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpoxyConcreteSealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Erosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ErosionSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Error"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExcellentCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExcessiveVibration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtentOfDamage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exudation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FairCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fiber-reinforcedPolymer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FiberOpticSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FireDamage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlatnessDefect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FormationMechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoundationSettlement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FreezeAndThawEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FunctioningDefect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GenerationPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlassFiber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Graffiti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HairlineCrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Half-cellPotentialTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealthMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heuristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Honeycombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HoneycombingSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImpactAnalysisOnOtherElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImpactedElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproperApplicationOfReleaseAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproperDesignOfConstructionProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproperDesignOfExpansionJoints"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproperDesignOfFormwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproperDesignOfReinforcement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImproperSelectionOfReleaseAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InadequatePlacementOfExpansionJoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateCastingOfConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateCompactionOfConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateCuringOfConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateMaterialOfExpansionJoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateMixingOfConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriatePlacementOfReinforcement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InappropriateTransportOfConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incrustation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfraredThermography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InfrustructureModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InitialSurfaceAbsorptionTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InspectionFrequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InspectionMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InspectionProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InspectionReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InspectionTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inspector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InsufficientFrequencyOfSurfaceProtection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LackOfCover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LackOfMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiDAR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightDelamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightDisintegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightErosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightHoneycombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightPop-out"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightScaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LightSpalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Load"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoadProblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Magnetic-based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MagneticFieldMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MagneticForceInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Magnetometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malfunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MappedCracking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasurementResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumCrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumDelamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumDisintegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumErosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumHoneycombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumPop-out"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumScaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumSpalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MethodofProcessingInspectionData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModifiedModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movement_of_Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NarrowCrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NeedFor3RProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-conformityIssueBetween_DesignAndBuiltStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonDestructiveTesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganicSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrientedCracking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OverLoad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Overload"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OversightFailuer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PointCloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolymetricFiber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolyurethaneCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolyurethaneConcreteSealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolyvinylCopolymersCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoorCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoorDesign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoorQualityOfRawMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoorWorkmanship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pop-out"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pop-outSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotentialCause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PredictionOfDefectProgress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreplacedAggregateConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PresenceOfHarmfulSubstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProblemDuringDesign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProblemDuringMaintenance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProblemDuringOperation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtectingProtrudingEdges"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RGBCamera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RaisinInjection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RebarlocationAndCoverCoverageInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rehabilitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RehabilitationAndStrengtheningOfConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReinforcementCorrosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReinforcementExpansion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReinforcingSteel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelatedDefect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemoteSensing-based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemoteSensingMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemoteSensingResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RemovingLooseConcrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepairMaterial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepairMaterialSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepairModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepairOfSurfaceIrregularity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Replacement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RequestID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RubberHammerResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RubberHammerTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RustStain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SafetyRelatedTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScalingSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sectionloss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Segregation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SelectingThe3RMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semi-destructiveTesting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevereDelamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevereDisintegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevereErosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevereHoneycombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeverePop-out"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevereScaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevereSpalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShapeExtraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShotcretePlacement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SilaneConcreteSealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SiliconeConcreteSealer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlipperySurface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoilChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpallingSeverity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stalactite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SteelFiber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stratification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StressConcentration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subtraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sulphate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SunExpsure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceAbsorptionCharactristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceCleaning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceGrinding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceSealingAndCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurroundingCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Survaying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surveying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SuspendedSolidParticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Target"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerpolymersCoating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TestResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalCamera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThermalStress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thermo-hygrometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TotalStation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vandalism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySevereDelamination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySevereDisintegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySevereErosion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySevereHoneycombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySeverePop-out"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySevereScaling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VerySevereSpalling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VibratingWireCrackMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vibration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualInspection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterPresence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WaterStain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WideCrack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WindLoad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WirelessSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkOrder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkSchedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3RCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3RMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3RProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3RReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#3RTools"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AbrasionDamage/Wear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adding/RemovingReinforcingSteel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adding/ReplacingConcrete/Mortar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition/State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition/StateIssue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConventionalMortar/Concrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpoxyMortar/Concrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infrastructure/BuildingID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moisture/Humidity-based"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moisture/HumidityChange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moisture/HumidityInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moisture/HumidityMeasuring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mortar/Concrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PolymerModifiedMortar/Concrete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape/Pattern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StructureSettlement/Deformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UsingInadequate/DefectiveFormwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#analyzes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#captures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#chooses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#determines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#evaluates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActualCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActualCost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActualRepairDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffectedLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffectedMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffectedPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAffectedSpace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAssignedPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCollectedData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConditionAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDefectType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEstimatedCost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExecutionReport"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImpact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImpactedElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInspectionMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInspectionTool"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInspector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModifiedModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOfficeInspactor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhaseOfCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPotentialCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProcessingMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedDefect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRepairMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRepairType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRepairer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRootCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSelectingRepairMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSiteInspactor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWorkOrder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#include"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isKindOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasApprovalDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCostForRepair"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDefectId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDepth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDetectionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDirection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasElementId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasElementName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInspactionCycleTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInspactionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIteration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLevelOfProgress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrientation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPreviousData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRepairDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasShape"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasThickness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimeForRepair"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasToolName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HirlineCrackPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightDelaminationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightDisintegrationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightErosionPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightHoneycombingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightPop-outPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightScalingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LightSpallingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumCrackPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumDelaminationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumDisintegrationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumErosionPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumHoneycombingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumPop-outPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumScalingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumSpallingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NarrowCrackPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevereDelaminationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevereDisintegrationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevereErosionPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevereHoneycombingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeverePop-outPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SevereSpallingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VerySevereDelaminationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VerySevereDisintegrationPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VerySevereErosionPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VerySevereHoneycombingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VerySeverePop-outPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VerySevereScalingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VerySevereSpallingPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WideCrackPropertySet"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#domainincludes"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#example"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#imports"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#licence"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#paper"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#project"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#scope"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AbrasionAndWearEffect"/>
+        <Class IRI="#ProblemDuringOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acid"/>
+        <Class IRI="#ChemicalAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acoustic-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#RubberHammerResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcrylicCoating"/>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcrylicConcreteSealer"/>
+        <Class IRI="#ConcreteSurfaceSealer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActivityID"/>
+        <Class IRI="#ID"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ActualCause"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AddingFiber-reinforcedPolymer"/>
+        <Class IRI="#RehabilitationAndStrengtheningOfConcrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AddingFiber-reinforcedPolymer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Fiber-reinforcedPolymer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Addition"/>
+        <Class IRI="#FormChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Addition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FormChange"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AggregateExpansion"/>
+        <Class IRI="#FreezeAndThawEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alkali-silicaReaction"/>
+        <Class IRI="#ChemicalAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#As-inspectedModel"/>
+        <Class IRI="#BIMModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#As-inspectedModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#include"/>
+            <Class IRI="#DefectModel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#As-inspectedModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#include"/>
+            <Class IRI="#InfrustructureModel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BIMModel"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BIMModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Binoculars"/>
+        <Class IRI="#InspectionTools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalAgent"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalGrowthStain"/>
+        <Class IRI="#Stain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BiologicalGrowthStain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BituminousCoating"/>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BondingStrength"/>
+        <Class IRI="#RepairMaterialSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bughole"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bughole"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CastingInInappropriateWeatherConditions"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CauseAnalysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#determines"/>
+            <Class IRI="#ActualCause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CauseAnalysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#determines"/>
+            <Class IRI="#Cause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CauseAnalysis"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Analysis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemical-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#PresenceOfHarmfulSubstance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalAttack"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalStain"/>
+        <Class IRI="#Stain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChemicalStain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chloride"/>
+        <Class IRI="#ChemicalAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChlorinatedRubberCoating"/>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clustering"/>
+        <Class IRI="#MethodofProcessingInspectionData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdJoint"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColdJoint"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollectedData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#InspectionTools"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColorimetricTestStrips"/>
+        <Class IRI="#NonDestructiveTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ColorimetricTestStrips"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#PresenceOfHarmfulSubstance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComponentID"/>
+        <Class IRI="#ID"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComponentID"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Time"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVision"/>
+        <Class IRI="#RemoteSensingMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Analysis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#CollectedData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Hardware"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ComputerVision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Software"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteCoverMeasuring"/>
+        <Class IRI="#MeasurementMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteCoverMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#MagneticFieldMeasuring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteCoverMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RebarlocationAndCoverCoverageInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteCoverMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#CoverMeter"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+        <Class IRI="#DefectType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteSurfaceSealer"/>
+        <Class IRI="#RepairMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionAssessment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsPartOf"/>
+            <Class IRI="#DiagnosisProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionAssessment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#determines"/>
+            <Class IRI="#Condition/State"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionAssessment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#evaluates"/>
+            <Class IRI="#ExtentOfDamage"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionAssessment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#evaluates"/>
+            <Class IRI="#NeedFor3RProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorrosionProbabilityEstimation"/>
+        <Class IRI="#TestResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoverMeter"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crack"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CrackSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackDimension"/>
+        <Class IRI="#MeasurementResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackFilling"/>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMeasuring"/>
+        <Class IRI="#MeasurementMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CrackDimension"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CrackMeasuringDevice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMeasuringDevice"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMeasuringMagnifier"/>
+        <Class IRI="#CrackMeasuringDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMeasuringMicroscope"/>
+        <Class IRI="#CrackMeasuringDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMonitorGauge"/>
+        <Class IRI="#CrackMeasuringDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackMonitoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#CrackDimension"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackWidthMeter"/>
+        <Class IRI="#CrackMeasuringDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ActualCause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DefectDefinition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DefectType"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#FormationMechanism"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#HostElement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ImpactedElement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RelatedDefect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectDefinition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Dimension"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectDefinition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#GenerationPeriod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectDefinition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectDefinition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Orientation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectDefinition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Severity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectDefinition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Shape/Pattern"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectModel"/>
+        <Class IRI="#BIMModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Defect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RelatedDefect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Cause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#FormChange"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefectType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#PotentialCause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deformation"/>
+        <Class IRI="#FormChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delamination"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Delamination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DelaminationSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DelaminationSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DepthCamera"/>
+        <Class IRI="#ImageSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DestructiveTesting"/>
+        <Class IRI="#Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetachingLooseCover"/>
+        <Class IRI="#RemovingLooseConcrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Acoustic-based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Chemical-based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CrackMonitoring"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DiagnosisTools"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Electrochemical-based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Heuristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Magnetic-based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#MethodofProcessingInspectionData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RemoteSensing-based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Moisture/Humidity-based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CauseAnalysis"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ConditionAssessment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Defect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DiagnosisMethod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DiagnosisReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ImpactAnalysisOnOtherElement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#MethodofProcessingInspectionData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#PredictionOfDefectProgress"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#SelectingThe3RMethod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WorkOrder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WorkSchedule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalStrainGaugeDeformationMeter"/>
+        <Class IRI="#CrackMeasuringDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimension"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#Severity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disintegration"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disintegration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#DisintegrationSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisintegrationSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Durability"/>
+        <Class IRI="#RepairMaterialSpecification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DustStain"/>
+        <Class IRI="#Stain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DustStain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EarlyRemovalOfFormwork"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EdgeDetection"/>
+        <Class IRI="#MethodofProcessingInspectionData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Efflorescence"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Efflorescence"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrochemical-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#CorrosionProbabilityEstimation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Element"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Element"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#DiagnosisProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalProblem"/>
+        <Class IRI="#ProblemDuringOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalProblem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#LoadProblem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalProblem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#ReinforcementCorrosion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalProblem"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#ReinforcementExpansion"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environmental_Condition"/>
+        <Class IRI="#SurroundingCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpoxyCoating"/>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpoxyConcreteSealer"/>
+        <Class IRI="#ConcreteSurfaceSealer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erosion"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erosion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ErosionSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ErosionSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Error"/>
+        <Class IRI="#ProblemDuringDesign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Error"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#ProblemDuringConstruction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExcellentCondition"/>
+        <Class IRI="#Condition/State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExcessiveVibration"/>
+        <Class IRI="#LoadProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exudation"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exudation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FairCondition"/>
+        <Class IRI="#Condition/State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FairCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#Malfunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fiber-reinforcedPolymer"/>
+        <Class IRI="#RepairMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FiberOpticSensor"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FireDamage"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlatnessDefect"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlatnessDefect"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FormationMechanism"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Cause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoundationSettlement"/>
+        <Class IRI="#StructureSettlement/Deformation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FreezeAndThawEffect"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FunctioningDefect"/>
+        <Class IRI="#DefectType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlassFiber"/>
+        <Class IRI="#Fiber-reinforcedPolymer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoodCondition"/>
+        <Class IRI="#Condition/State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graffiti"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Graffiti"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HairlineCrack"/>
+        <Class IRI="#CrackSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HairlineCrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Half-cellPotentialTest"/>
+        <Class IRI="#Semi-destructiveTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthMonitoring"/>
+        <Class IRI="#MeasurementMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthMonitoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#FiberOpticSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HealthMonitoring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#WirelessSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honeycombing"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Honeycombing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#HoneycombingSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HoneycombingSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostElement"/>
+        <Class IRI="#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#CollectedData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageSensor"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageSensor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#captures"/>
+            <Class IRI="#Image"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImpactAnalysisOnOtherElement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsPartOf"/>
+            <Class IRI="#DiagnosisProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImpactedElement"/>
+        <Class IRI="#Element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImpactedElement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RelatedDefect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproperApplicationOfReleaseAgent"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproperDesignOfConstructionProcess"/>
+        <Class IRI="#PoorDesign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproperDesignOfExpansionJoints"/>
+        <Class IRI="#PoorDesign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproperDesignOfFormwork"/>
+        <Class IRI="#PoorDesign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproperDesignOfReinforcement"/>
+        <Class IRI="#PoorDesign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImproperSelectionOfReleaseAgent"/>
+        <Class IRI="#PoorDesign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InadequatePlacementOfExpansionJoint"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateCastingOfConcrete"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateCompactionOfConcrete"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateCuringOfConcrete"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateMaterialOfExpansionJoint"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateMixingOfConcrete"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriatePlacementOfReinforcement"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InappropriateTransportOfConcrete"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incrustation"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incrustation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfraredThermography"/>
+        <Class IRI="#MeasurementMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfraredThermography"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#ThermalCamera"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfrustructureModel"/>
+        <Class IRI="#BIMModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfrustructureModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Element"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InfrustructureModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Structure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InitialSurfaceAbsorptionTest"/>
+        <Class IRI="#NonDestructiveTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InitialSurfaceAbsorptionTest"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#SurfaceAbsorptionCharactristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionFrequency"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CollectedData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionProcess"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#InspectionFrequency"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#InspectionMethod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#InspectionReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WorkOrder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InspectionProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WorkSchedule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inspector"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inspector"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#InspectionProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InsufficientFrequencyOfSurfaceProtection"/>
+        <Class IRI="#ProblemDuringMaintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LackOfCover"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LackOfMaintenance"/>
+        <Class IRI="#ProblemDuringMaintenance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LackOfMaintenance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#AgingDeterioration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LackOfMaintenance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#ProblemDuringOperation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiDAR"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiDAR"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#captures"/>
+            <Class IRI="#PointCloud"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightDelamination"/>
+        <Class IRI="#DelaminationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightDelamination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightDisintegration"/>
+        <Class IRI="#DisintegrationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightDisintegration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightErosion"/>
+        <Class IRI="#ErosionSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightErosion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightHoneycombing"/>
+        <Class IRI="#HoneycombingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightHoneycombing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightPop-out"/>
+        <Class IRI="#Pop-outSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightPop-out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightScaling"/>
+        <Class IRI="#ScalingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightScaling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightSpalling"/>
+        <Class IRI="#SpallingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LightSpalling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Load"/>
+        <Class IRI="#SurroundingCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoadProblem"/>
+        <Class IRI="#ProblemDuringOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Magnetic-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#MagneticForceInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Magnetic-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#RebarlocationAndCoverCoverageInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagneticFieldMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#MagneticForceInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagneticFieldMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Magnetometer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagneticForceInformation"/>
+        <Class IRI="#MeasurementResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Magnetometer"/>
+        <Class IRI="#CoverMeter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Magnetometer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#MeasurementDevice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malfunction"/>
+        <Class IRI="#Condition/StateIssue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malfunction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FunctioningDefect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MappedCracking"/>
+        <Class IRI="#Crack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <Class IRI="#InspectionMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#MeasurementDevice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#MeasurementMethod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#MeasurementResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementDevice"/>
+        <Class IRI="#InspectionTools"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeasurementResult"/>
+        <Class IRI="#CollectedData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumCrack"/>
+        <Class IRI="#CrackSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumCrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumDelamination"/>
+        <Class IRI="#DelaminationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumDelamination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumDisintegration"/>
+        <Class IRI="#DisintegrationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumDisintegration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumErosion"/>
+        <Class IRI="#ErosionSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumErosion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumHoneycombing"/>
+        <Class IRI="#HoneycombingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumHoneycombing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumPop-out"/>
+        <Class IRI="#Pop-outSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumPop-out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumScaling"/>
+        <Class IRI="#ScalingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumScaling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSpalling"/>
+        <Class IRI="#SpallingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumSpalling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModifiedModel"/>
+        <Class IRI="#BIMModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NarrowCrack"/>
+        <Class IRI="#CrackSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NarrowCrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#GoodCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NeedFor3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#SelectingThe3RMethod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-conformityIssueBetween_DesignAndBuiltStructure"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonDestructiveTesting"/>
+        <Class IRI="#Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganicSubstance"/>
+        <Class IRI="#ChemicalAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrientedCracking"/>
+        <Class IRI="#Crack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Overload"/>
+        <Class IRI="#LoadProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OversightFailuer"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OversightFailuer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#ProblemDuringConstruction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PointCloud"/>
+        <Class IRI="#CollectedData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolymetricFiber"/>
+        <Class IRI="#Fiber-reinforcedPolymer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyurethaneCoating"/>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyurethaneConcreteSealer"/>
+        <Class IRI="#ConcreteSurfaceSealer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolyvinylCopolymersCoating"/>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoorCondition"/>
+        <Class IRI="#Condition/State"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoorCondition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#Malfunction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoorDesign"/>
+        <Class IRI="#ProblemDuringDesign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoorQualityOfRawMaterial"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoorWorkmanship"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoorWorkmanship"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#ProblemDuringConstruction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pop-out"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pop-out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Pop-outSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pop-outSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotentialCause"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PredictionOfDefectProgress"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsPartOf"/>
+            <Class IRI="#DiagnosisProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreplacedAggregateConcrete"/>
+        <Class IRI="#Mortar/Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PresenceOfHarmfulSubstance"/>
+        <Class IRI="#TestResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProblemDuringConstruction"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProblemDuringDesign"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProblemDuringMaintenance"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProblemDuringOperation"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtectingProtrudingEdges"/>
+        <Class IRI="#3RMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+        <Class IRI="#RepairMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RGBCamera"/>
+        <Class IRI="#ImageSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RaisinInjection"/>
+        <Class IRI="#CrackFilling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RaisinInjection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#ConcreteSurfaceSealer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RebarlocationAndCoverCoverageInformation"/>
+        <Class IRI="#MeasurementResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rehabilitation"/>
+        <Class IRI="#3RProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RehabilitationAndStrengtheningOfConcrete"/>
+        <Class IRI="#3RMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReinforcementCorrosion"/>
+        <Class IRI="#ProblemDuringOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReinforcementExpansion"/>
+        <Class IRI="#ProblemDuringOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReinforcingSteel"/>
+        <Class IRI="#RepairMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelatedDefect"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensing-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#RemoteSensingResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensingMethod"/>
+        <Class IRI="#MeasurementMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensingMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RemoteSensingResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensingMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#FiberOpticSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensingMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#ImageSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensingMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#LiDAR"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensingMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#WirelessSensor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RemoteSensingResult"/>
+        <Class IRI="#MeasurementResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repair"/>
+        <Class IRI="#3RProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairMaterial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RepairMaterialSpecification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairMaterial"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#treats"/>
+            <Class IRI="#ImpactedElement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairModel"/>
+        <Class IRI="#ModifiedModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairModel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#include"/>
+            <Class IRI="#3RProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepairOfSurfaceIrregularity"/>
+        <Class IRI="#3RMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Replacement"/>
+        <Class IRI="#3RProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RubberHammerResult"/>
+        <Class IRI="#TestResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RubberHammerTest"/>
+        <Class IRI="#NonDestructiveTesting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RubberHammerTest"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RubberHammerResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RustStain"/>
+        <Class IRI="#Stain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RustStain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SafetyRelatedTest"/>
+        <Class IRI="#Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scaling"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scaling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ScalingSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScalingSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sectionloss"/>
+        <Class IRI="#FormChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sectionloss"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FormChange"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Segregation"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Segregation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semi-destructiveTesting"/>
+        <Class IRI="#Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semi-destructiveTesting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CorrosionProbabilityEstimation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereDelamination"/>
+        <Class IRI="#DelaminationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereDelamination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereDisintegration"/>
+        <Class IRI="#DisintegrationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereDisintegration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereErosion"/>
+        <Class IRI="#ErosionSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereErosion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereHoneycombing"/>
+        <Class IRI="#HoneycombingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereHoneycombing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeverePop-out"/>
+        <Class IRI="#Pop-outSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeverePop-out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereScaling"/>
+        <Class IRI="#ScalingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereScaling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereSpalling"/>
+        <Class IRI="#SpallingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevereSpalling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShapeExtraction"/>
+        <Class IRI="#MethodofProcessingInspectionData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShapeExtraction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#MethodofProcessingInspectionData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShotcretePlacement"/>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SilaneConcreteSealer"/>
+        <Class IRI="#ConcreteSurfaceSealer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SiliconeConcreteSealer"/>
+        <Class IRI="#ConcreteSurfaceSealer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlipperySurface"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlipperySurface"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoilChange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#FoundationSettlement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spalling"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spalling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#SpallingSeverity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpallingSeverity"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stain"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stalactite"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stalactite"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SteelFiber"/>
+        <Class IRI="#Fiber-reinforcedPolymer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stratification"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StressConcentration"/>
+        <Class IRI="#LoadProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ComponentID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Element"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Infrastructure/BuildingID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subtraction"/>
+        <Class IRI="#FormChange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subtraction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FormChange"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sulphate"/>
+        <Class IRI="#ChemicalAttack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SunExpsure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#TemperatureChange"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceAbsorptionCharactristic"/>
+        <Class IRI="#TestResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceCleaning"/>
+        <Class IRI="#3RMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceGrinding"/>
+        <Class IRI="#RepairOfSurfaceIrregularity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceSealingAndCoating"/>
+        <Class IRI="#3RMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceSealingAndCoating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ConcreteSurfaceSealer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceSealingAndCoating"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ProtectiveSurfaceCoating"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Survaying"/>
+        <Class IRI="#RemoteSensingMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Survaying"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#TotalStation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surveying"/>
+        <Class IRI="#MeasurementMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SuspendedSolidParticle"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureChange"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureChange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#ThermalStress"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerpolymersCoating"/>
+        <Class IRI="#ProtectiveSurfaceCoating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TestResult"/>
+        <Class IRI="#CollectedData"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testing"/>
+        <Class IRI="#InspectionMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#TestResult"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalCamera"/>
+        <Class IRI="#ImageSensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalStress"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#LoadProblem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThermalStress"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#StressConcentration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thermo-hygrometer"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TotalStation"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vandalism"/>
+        <Class IRI="#ProblemDuringOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereDelamination"/>
+        <Class IRI="#DelaminationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereDelamination"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereDisintegration"/>
+        <Class IRI="#DisintegrationSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereDisintegration"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereErosion"/>
+        <Class IRI="#ErosionSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereErosion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereHoneycombing"/>
+        <Class IRI="#HoneycombingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereHoneycombing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySeverePop-out"/>
+        <Class IRI="#Pop-outSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySeverePop-out"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereScaling"/>
+        <Class IRI="#ScalingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereScaling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereSpalling"/>
+        <Class IRI="#SpallingSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VerySevereSpalling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VibratingWireCrackMeter"/>
+        <Class IRI="#CrackMeasuringDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualInspection"/>
+        <Class IRI="#InspectionMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualInspection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#InspectionTools"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterPresence"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterStain"/>
+        <Class IRI="#Stain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WaterStain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WideCrack"/>
+        <Class IRI="#CrackSeverity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WideCrack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#PoorCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindLoad"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WindLoad"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#ExcessiveVibration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WirelessSensor"/>
+        <Class IRI="#MeasurementDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ActivityID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ComponentID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Cost"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Date"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#EmergencyLevel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Location"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RequestID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Infrastructure/BuildingID"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#DiagnosisReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkOrder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#InspectionReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RCompany"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performs"/>
+            <Class IRI="#3RProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#RepairMaterial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <Class IRI="#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#chooses"/>
+            <Class IRI="#RepairMaterial"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WorkOrder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WorkSchedule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#3RMethod"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#3RReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#3RTools"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RProcess"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#treats"/>
+            <Class IRI="#HostElement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbrasionDamage/Wear"/>
+        <Class IRI="#ConcreteSurfaceDefect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AbrasionDamage/Wear"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adding/RemovingReinforcingSteel"/>
+        <Class IRI="#RehabilitationAndStrengtheningOfConcrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adding/RemovingReinforcingSteel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ReinforcingSteel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adding/ReplacingConcrete/Mortar"/>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+        <Class IRI="#3RMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#AddingConcreteLayer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CuringConcreteRepair"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#RemovingLooseConcrete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcreteRepair/Replacement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Mortar/Concrete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condition/State"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Condition/StateIssue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condition/StateIssue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#FunctioningDefect"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConventionalMortar/Concrete"/>
+        <Class IRI="#Mortar/Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpoxyMortar/Concrete"/>
+        <Class IRI="#Mortar/Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infrastructure/BuildingID"/>
+        <Class IRI="#ID"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/Humidity-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#SurfaceAbsorptionCharactristic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/Humidity-based"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#analyzes"/>
+            <Class IRI="#Moisture/HumidityInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/HumidityChange"/>
+        <Class IRI="#EnvironmentalProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/HumidityChange"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#SoilChange"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/HumidityInformation"/>
+        <Class IRI="#MeasurementResult"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/HumidityMeasuring"/>
+        <Class IRI="#MeasurementMethod"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/HumidityMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Thermo-hygrometer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moisture/HumidityMeasuring"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Moisture/HumidityInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mortar/Concrete"/>
+        <Class IRI="#RepairMaterial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PolymerModifiedMortar/Concrete"/>
+        <Class IRI="#Mortar/Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StructureSettlement/Deformation"/>
+        <Class IRI="#ProblemDuringOperation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StructureSettlement/Deformation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#affects"/>
+            <Class IRI="#LoadProblem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UsingInadequate/DefectiveFormwork"/>
+        <Class IRI="#ProblemDuringConstruction"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Environmental_Condition"/>
+        <Class IRI="#Image"/>
+        <Class IRI="#Load"/>
+        <Class IRI="#PointCloud"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#HairlineCrack"/>
+        <NamedIndividual IRI="#HirlineCrackPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightDelamination"/>
+        <NamedIndividual IRI="#LightDelaminationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightDisintegration"/>
+        <NamedIndividual IRI="#LightDisintegrationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightErosion"/>
+        <NamedIndividual IRI="#LightErosionPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightHoneycombing"/>
+        <NamedIndividual IRI="#LightHoneycombingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightPop-out"/>
+        <NamedIndividual IRI="#LightPop-outPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightScaling"/>
+        <NamedIndividual IRI="#LightScalingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LightSpalling"/>
+        <NamedIndividual IRI="#LightSpallingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumCrack"/>
+        <NamedIndividual IRI="#MediumCrackPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumDelamination"/>
+        <NamedIndividual IRI="#MediumDelaminationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumDisintegration"/>
+        <NamedIndividual IRI="#MediumDisintegrationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumErosion"/>
+        <NamedIndividual IRI="#MediumErosionPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumHoneycombing"/>
+        <NamedIndividual IRI="#MediumHoneycombingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumPop-out"/>
+        <NamedIndividual IRI="#MediumPop-outPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumScaling"/>
+        <NamedIndividual IRI="#MediumScalingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MediumSpalling"/>
+        <NamedIndividual IRI="#MediumSpallingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NarrowCrack"/>
+        <NamedIndividual IRI="#NarrowCrackPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SevereDelamination"/>
+        <NamedIndividual IRI="#SevereDelaminationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SevereDisintegration"/>
+        <NamedIndividual IRI="#SevereDisintegrationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SevereErosion"/>
+        <NamedIndividual IRI="#SevereErosionPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SevereHoneycombing"/>
+        <NamedIndividual IRI="#SevereHoneycombingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeverePop-out"/>
+        <NamedIndividual IRI="#SeverePop-outPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SevereSpalling"/>
+        <NamedIndividual IRI="#SevereSpallingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VerySevereDelamination"/>
+        <NamedIndividual IRI="#VerySevereDelaminationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VerySevereDisintegration"/>
+        <NamedIndividual IRI="#VerySevereDisintegrationPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VerySevereErosion"/>
+        <NamedIndividual IRI="#VerySevereErosionPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VerySevereHoneycombing"/>
+        <NamedIndividual IRI="#VerySevereHoneycombingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VerySeverePop-out"/>
+        <NamedIndividual IRI="#VerySeverePop-outPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VerySevereScaling"/>
+        <NamedIndividual IRI="#VerySevereScalingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VerySevereSpalling"/>
+        <NamedIndividual IRI="#VerySevereSpallingPropertySet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WideCrack"/>
+        <NamedIndividual IRI="#WideCrackPropertySet"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWidth"/>
+        <NamedIndividual IRI="#HirlineCrackPropertySet"/>
+        <Literal>&lt; 0.1 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#LightDelaminationPropertySet"/>
+        <Literal>&lt; 150 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#LightDisintegrationPropertySet"/>
+        <Literal>Depth ≤ 25 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#LightDisintegrationPropertySet"/>
+        <Literal>with some loss of coarse aggregate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#LightErosionPropertySet"/>
+        <Literal>≤ 25 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#LightErosionPropertySet"/>
+        <Literal>with some loss of coarse aggregate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#LightHoneycombingPropertySet"/>
+        <Literal>&lt; 25 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#LightPop-outPropertySet"/>
+        <Literal>≤ 25 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#LightScalingPropertySet"/>
+        <Literal>≤ 5 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#LightScalingPropertySet"/>
+        <Literal>without exposure of coarse aggregate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#LightSpallingPropertySet"/>
+        <Literal>&lt; 25 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#LightSpallingPropertySet"/>
+        <Literal>&lt; 150 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWidth"/>
+        <NamedIndividual IRI="#MediumCrackPropertySet"/>
+        <Literal>0.3 mm &lt; wide ≤ 1.0 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#MediumDelaminationPropertySet"/>
+        <Literal>150 mm ≤ Any direction ≤ 300 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#MediumDisintegrationPropertySet"/>
+        <Literal>25 mm &lt; depth ≤ 50 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#MediumDisintegrationPropertySet"/>
+        <Literal>with considerable loss of coarse aggregate and exposure of reinforcement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#MediumErosionPropertySet"/>
+        <Literal>25 mm &lt; depth ≤ 50 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#MediumErosionPropertySet"/>
+        <Literal>with considerable loss of coarse aggregate and exposure of reinforcement</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#MediumHoneycombingPropertySet"/>
+        <Literal>25 mm ≤ depth ≤ 50 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#MediumPop-outPropertySet"/>
+        <Literal>25 mm &lt; depth ≤ 50 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#MediumScalingPropertySet"/>
+        <Literal>6 mm ≤ depth ≤ 10 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#MediumScalingPropertySet"/>
+        <Literal>with exposure of some coarse aggregates</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#MediumSpallingPropertySet"/>
+        <Literal>25 mm ≤ depth ≤ 50 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#MediumSpallingPropertySet"/>
+        <Literal>150 mm ≤ Any direction ≤ 300 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWidth"/>
+        <NamedIndividual IRI="#NarrowCrackPropertySet"/>
+        <Literal>0.1 mm ≤ wide ≤ 0.3 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#SevereDelaminationPropertySet"/>
+        <Literal>300 mm &lt; Any direction ≤ 600 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#SevereDisintegrationPropertySet"/>
+        <Literal>50 mm &lt; depth ≤ 100 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#SevereDisintegrationPropertySet"/>
+        <Literal>with substantial loss of coarse aggregate and exposure of reinforcement over a large area</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#SevereErosionPropertySet"/>
+        <Literal>50 mm &lt; depth ≤ 100 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#SevereErosionPropertySet"/>
+        <Literal>with substantial loss of coarse aggregate and exposure of reinforcement over a large area</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#SevereHoneycombingPropertySet"/>
+        <Literal>50 mm &lt; depth ≤ 100 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#SeverePop-outPropertySet"/>
+        <Literal>50 mm &lt; depth ≤ 100 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#SevereSpallingPropertySet"/>
+        <Literal>50 mm &lt; depth ≤ 100 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#SevereSpallingPropertySet"/>
+        <Literal>300 mm &lt; Any direction ≤ 600 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#VerySevereDelaminationPropertySet"/>
+        <Literal>600 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#VerySevereDisintegrationPropertySet"/>
+        <Literal>100 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#VerySevereDisintegrationPropertySet"/>
+        <Literal>extending over a large area</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#VerySevereErosionPropertySet"/>
+        <Literal>100 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDescription"/>
+        <NamedIndividual IRI="#VerySevereErosionPropertySet"/>
+        <Literal>extending over a large area</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#VerySevereHoneycombingPropertySet"/>
+        <Literal>100 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#VerySeverePop-outPropertySet"/>
+        <Literal>100 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#VerySevereScalingPropertySet"/>
+        <Literal>&gt; 20 mm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDepth"/>
+        <NamedIndividual IRI="#VerySevereSpallingPropertySet"/>
+        <Literal>100 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMeasurementInAnyDirection"/>
+        <NamedIndividual IRI="#VerySevereSpallingPropertySet"/>
+        <Literal>600 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWidth"/>
+        <NamedIndividual IRI="#WideCrackPropertySet"/>
+        <Literal>1.0 mm &lt;</Literal>
+    </DataPropertyAssertion>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInspectionMethod"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInspectionTool"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInspectionMethod"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInspectionTool"/>
+    </IrreflexiveObjectProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cause</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">analysis of detected defects considering the relationships with the surrounding conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DefectType</IRI>
+        <Literal>the cause of defect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Effect_of_Chemical</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g., de-icing salts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Effect_of_Liquid</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g., Whater</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HealthMonitoring</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. fiber-optic strain gauges, wireless sensors</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HealthMonitoring</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://ascelibrary.org/cms/attachment/78341/1675358/figure2.gif</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HealthMonitoring</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://img.directindustry.com/images_di/photo-g/6017-5198611.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InspectionTools</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. type of equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MethodofProcessingInspectionData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. edge detection, shape extraction, clustering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Movement_of_Base</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g., earthquake, poor Foundation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Movement_of_Base</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Link
+http://www.sinaiconstruction.net/LA-foundation-retrofit-blog/wp-content/uploads/2011/11/16.-causes-of-foundation-problems.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonDestructiveTesting</IRI>
+        <Literal>Evaluate the properties of a material, component or system without causing damage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonDestructiveTesting</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. echography, ground penetrating radar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonDestructiveTesting</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://lmats.com.au/images/stories/resourcecentre/ultrasonic%20big%20welds.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NonDestructiveTesting</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Nondestructive_testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RemoteSensingMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. LiDAR, computer vision, total station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RemoteSensingMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://informedinfrastructure.com/wp-content/uploads/2016/03/3dr_SiteScan_Bridge.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RemoteSensingMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.diades.fr/wp-content/uploads/2015/04/roquemaure-1-480x240.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RemoteSensingMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://www.mdpi.com/remotesensing/remotesensing-05-04652/article_deploy/html/images/remotesensing-05-04652f2.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RemoteSensingMethod</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://i.ebayimg.com/images/i/151843180081-0-1/s-l1000.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VisualInspection</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g., Picture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDescription</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI"></Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
