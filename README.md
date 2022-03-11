@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/OCSD-OWL/OCSD/main/Files/Host/OCSD.png)
+![Main types of OCSD concepts](https://raw.githubusercontent.com/OCSD-OWL/OCSD/main/Files/Host/OCSD.png)
 
 ### PAPER: ONTOLOGY FOR CONCRETE SURFACE DEFECTS AND AS-INSPECTED MODELING
 
