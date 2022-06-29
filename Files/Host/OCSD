@@ -106,7 +106,7 @@ Amin Hammad</Literal>
         <Class IRI="#BIMModel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Binoculars"/>
+        <Class IRI="#Binocular"/>
     </Declaration>
     <Declaration>
         <Class IRI="#BiologicalAgent"/>
@@ -292,10 +292,10 @@ Amin Hammad</Literal>
         <Class IRI="#EdgeDetection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Effect_of_Chemical"/>
+        <Class IRI="#EffectOfChemical"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Effect_of_Liquid"/>
+        <Class IRI="#EffectOfLiquid"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Efflorescence"/>
@@ -313,10 +313,10 @@ Amin Hammad</Literal>
         <Class IRI="#Engineer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#EnvironmentalProblem"/>
+        <Class IRI="#EnvironmentalCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Environmental_Condition"/>
+        <Class IRI="#EnvironmentalProblem"/>
     </Declaration>
     <Declaration>
         <Class IRI="#EpoxyCoating"/>
@@ -493,7 +493,7 @@ Amin Hammad</Literal>
         <Class IRI="#InspectionReport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InspectionTools"/>
+        <Class IRI="#InspectionTool"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Inspector"/>
@@ -598,13 +598,10 @@ Amin Hammad</Literal>
         <Class IRI="#MediumSpalling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MethodofProcessingInspectionData"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ModifiedModel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Movement_of_Base"/>
+        <Class IRI="#MovementOfBase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NarrowCrack"/>
@@ -613,7 +610,7 @@ Amin Hammad</Literal>
         <Class IRI="#NeedFor3RProcess"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Non-conformityIssueBetween_DesignAndBuiltStructure"/>
+        <Class IRI="#Non-conformityIssueBetweenDesignAndBuiltStructure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NonDestructiveTesting"/>
@@ -670,6 +667,9 @@ Amin Hammad</Literal>
         <Class IRI="#Pop-outSeverity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Post-processingOfInspectionData"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PotentialCause"/>
     </Declaration>
     <Declaration>
@@ -707,9 +707,6 @@ Amin Hammad</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#RGBCamera"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#RaisinInjection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RebarlocationAndCoverCoverageInformation"/>
@@ -764,6 +761,9 @@ Amin Hammad</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#RequestID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResinInjection"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RubberHammerResult"/>
@@ -868,13 +868,13 @@ Amin Hammad</Literal>
         <Class IRI="#Subtraction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sulphate"/>
+        <Class IRI="#Sulfate"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SunExpsure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SurfaceAbsorptionCharactristic"/>
+        <Class IRI="#SurfaceAbsorptionCharacteristic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SurfaceCleaning"/>
@@ -1540,8 +1540,8 @@ Amin Hammad</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Binoculars"/>
-        <Class IRI="#InspectionTools"/>
+        <Class IRI="#Binocular"/>
+        <Class IRI="#InspectionTool"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BiologicalAgent"/>
@@ -1634,7 +1634,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Clustering"/>
-        <Class IRI="#MethodofProcessingInspectionData"/>
+        <Class IRI="#Post-processingOfInspectionData"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ColdJoint"/>
@@ -1651,7 +1651,7 @@ Amin Hammad</Literal>
         <Class IRI="#CollectedData"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#has"/>
-            <Class IRI="#InspectionTools"/>
+            <Class IRI="#InspectionTool"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2077,13 +2077,6 @@ Amin Hammad</Literal>
         <Class IRI="#DiagnosisMethod"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#has"/>
-            <Class IRI="#MethodofProcessingInspectionData"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DiagnosisMethod"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has"/>
             <Class IRI="#RemoteSensing-based"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -2092,6 +2085,13 @@ Amin Hammad</Literal>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#has"/>
             <Class IRI="#Moisture/Humidity-based"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DiagnosisMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#Post-processingOfInspectionData"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2144,21 +2144,7 @@ Amin Hammad</Literal>
         <Class IRI="#DiagnosisProcess"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#has"/>
-            <Class IRI="#MethodofProcessingInspectionData"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DiagnosisProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has"/>
             <Class IRI="#PredictionOfDefectProgress"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DiagnosisProcess"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has"/>
-            <Class IRI="#SelectingThe3RMethod"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2222,7 +2208,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EdgeDetection"/>
-        <Class IRI="#MethodofProcessingInspectionData"/>
+        <Class IRI="#Post-processingOfInspectionData"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Efflorescence"/>
@@ -2265,6 +2251,10 @@ Amin Hammad</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EnvironmentalCondition"/>
+        <Class IRI="#SurroundingCondition"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EnvironmentalProblem"/>
         <Class IRI="#ProblemDuringOperation"/>
     </SubClassOf>
@@ -2288,10 +2278,6 @@ Amin Hammad</Literal>
             <ObjectProperty IRI="#affects"/>
             <Class IRI="#ReinforcementExpansion"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Environmental_Condition"/>
-        <Class IRI="#SurroundingCondition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EpoxyCoating"/>
@@ -2607,7 +2593,7 @@ Amin Hammad</Literal>
         <Class IRI="#InitialSurfaceAbsorptionTest"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#has"/>
-            <Class IRI="#SurfaceAbsorptionCharactristic"/>
+            <Class IRI="#SurfaceAbsorptionCharacteristic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2888,7 +2874,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MeasurementDevice"/>
-        <Class IRI="#InspectionTools"/>
+        <Class IRI="#InspectionTool"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MeasurementResult"/>
@@ -3005,7 +2991,7 @@ Amin Hammad</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Non-conformityIssueBetween_DesignAndBuiltStructure"/>
+        <Class IRI="#Non-conformityIssueBetweenDesignAndBuiltStructure"/>
         <Class IRI="#ProblemDuringConstruction"/>
     </SubClassOf>
     <SubClassOf>
@@ -3101,6 +3087,13 @@ Amin Hammad</Literal>
         <Class IRI="#Severity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Post-processingOfInspectionData"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#CollectedData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PotentialCause"/>
         <Class IRI="#Cause"/>
     </SubClassOf>
@@ -3146,17 +3139,6 @@ Amin Hammad</Literal>
     <SubClassOf>
         <Class IRI="#RGBCamera"/>
         <Class IRI="#ImageSensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RaisinInjection"/>
-        <Class IRI="#CrackFilling"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#RaisinInjection"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#uses"/>
-            <Class IRI="#ConcreteSurfaceSealer"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RebarlocationAndCoverCoverageInformation"/>
@@ -3274,6 +3256,17 @@ Amin Hammad</Literal>
         <Class IRI="#3RProcess"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ResinInjection"/>
+        <Class IRI="#CrackFilling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResinInjection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#ConcreteSurfaceSealer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RubberHammerResult"/>
         <Class IRI="#TestResult"/>
     </SubClassOf>
@@ -3338,6 +3331,13 @@ Amin Hammad</Literal>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#is"/>
             <Class IRI="#FairCondition"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SelectingThe3RMethod"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#dependsOn"/>
+            <Class IRI="#DiagnosisProcess"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3430,13 +3430,13 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ShapeExtraction"/>
-        <Class IRI="#MethodofProcessingInspectionData"/>
+        <Class IRI="#Post-processingOfInspectionData"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ShapeExtraction"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#is"/>
-            <Class IRI="#MethodofProcessingInspectionData"/>
+            <Class IRI="#Post-processingOfInspectionData"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3548,7 +3548,7 @@ Amin Hammad</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sulphate"/>
+        <Class IRI="#Sulfate"/>
         <Class IRI="#ChemicalAttack"/>
     </SubClassOf>
     <SubClassOf>
@@ -3559,7 +3559,7 @@ Amin Hammad</Literal>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SurfaceAbsorptionCharactristic"/>
+        <Class IRI="#SurfaceAbsorptionCharacteristic"/>
         <Class IRI="#TestResult"/>
     </SubClassOf>
     <SubClassOf>
@@ -3756,7 +3756,7 @@ Amin Hammad</Literal>
         <Class IRI="#VisualInspection"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#uses"/>
-            <Class IRI="#InspectionTools"/>
+            <Class IRI="#InspectionTool"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3873,6 +3873,13 @@ Amin Hammad</Literal>
     <SubClassOf>
         <Class IRI="#3RCompany"/>
         <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#3RCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#chooses"/>
+            <Class IRI="#3RMethod"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#3RCompany"/>
@@ -4036,7 +4043,7 @@ Amin Hammad</Literal>
         <Class IRI="#Moisture/Humidity-based"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#analyzes"/>
-            <Class IRI="#SurfaceAbsorptionCharactristic"/>
+            <Class IRI="#SurfaceAbsorptionCharacteristic"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -4103,7 +4110,7 @@ Amin Hammad</Literal>
         <Class IRI="#ProblemDuringConstruction"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Environmental_Condition"/>
+        <Class IRI="#EnvironmentalCondition"/>
         <Class IRI="#Image"/>
         <Class IRI="#Load"/>
         <Class IRI="#PointCloud"/>
@@ -4481,12 +4488,12 @@ Amin Hammad</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Effect_of_Chemical</IRI>
+        <IRI>#EffectOfChemical</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g., de-icing salts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Effect_of_Liquid</IRI>
+        <IRI>#EffectOfLiquid</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g., Whater</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -4506,22 +4513,17 @@ Amin Hammad</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#InspectionTools</IRI>
+        <IRI>#InspectionTool</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. type of equipment</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#MethodofProcessingInspectionData</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. edge detection, shape extraction, clustering</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Movement_of_Base</IRI>
+        <IRI>#MovementOfBase</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g., earthquake, poor Foundation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>#Movement_of_Base</IRI>
+        <IRI>#MovementOfBase</IRI>
         <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Link
 http://www.sinaiconstruction.net/LA-foundation-retrofit-blog/wp-content/uploads/2011/11/16.-causes-of-foundation-problems.jpg</Literal>
     </AnnotationAssertion>
@@ -4544,6 +4546,11 @@ http://www.sinaiconstruction.net/LA-foundation-retrofit-blog/wp-content/uploads/
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#NonDestructiveTesting</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Nondestructive_testing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Post-processingOfInspectionData</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">e.g. edge detection, shape extraction, clustering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4584,5 +4591,5 @@ http://www.sinaiconstruction.net/LA-foundation-retrofit-blog/wp-content/uploads/
 
 
 
-<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
