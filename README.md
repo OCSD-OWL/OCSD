@@ -2,7 +2,7 @@
 |:--:| 
 | *Main types of OCSD concepts* |
 
-### PAPER: ONTOLOGY FOR CONCRETE SURFACE DEFECTS AND AS-INSPECTED MODELING
+### ONTOLOGY FOR CONCRETE SURFACE DEFECTS
 
 OCSD ccovers four main types of concepts: (1) inspection concepts, (2) diagnosis concepts, (3) 3R (Repair, Rehabilitation, and Replacement) concepts, and (4) defect concepts. <br />
 OCSD has 333 classes, 51 relations, 27 attributes, and 31 individuals. <br />
