@@ -175,7 +175,13 @@ Amin Hammad</Literal>
         <Class IRI="#ConcreteSurfaceSealer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ConditionAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionIssue"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CorrosionProbabilityEstimation"/>
@@ -1012,12 +1018,6 @@ Amin Hammad</Literal>
         <Class IRI="#ConcreteRepair/Replacement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Condition/State"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Condition/StateIssue"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ConventionalMortar/Concrete"/>
     </Declaration>
     <Declaration>
@@ -1756,6 +1756,20 @@ Amin Hammad</Literal>
         <Class IRI="#RepairMaterial"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Condition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#dependsOn"/>
+            <Class IRI="#Severity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ConditionIssue"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ConditionAssessment"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#IsPartOf"/>
@@ -1766,7 +1780,7 @@ Amin Hammad</Literal>
         <Class IRI="#ConditionAssessment"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#determines"/>
-            <Class IRI="#Condition/State"/>
+            <Class IRI="#Condition"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1781,6 +1795,13 @@ Amin Hammad</Literal>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#evaluates"/>
             <Class IRI="#NeedFor3RProcess"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionIssue"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#causes"/>
+            <Class IRI="#FunctioningDefect"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2315,7 +2336,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ExcellentCondition"/>
-        <Class IRI="#Condition/State"/>
+        <Class IRI="#Condition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ExcessiveVibration"/>
@@ -2334,7 +2355,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FairCondition"/>
-        <Class IRI="#Condition/State"/>
+        <Class IRI="#Condition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FairCondition"/>
@@ -2391,7 +2412,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GoodCondition"/>
-        <Class IRI="#Condition/State"/>
+        <Class IRI="#Condition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Graffiti"/>
@@ -2834,7 +2855,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Malfunction"/>
-        <Class IRI="#Condition/StateIssue"/>
+        <Class IRI="#ConditionIssue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Malfunction"/>
@@ -3043,7 +3064,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PoorCondition"/>
-        <Class IRI="#Condition/State"/>
+        <Class IRI="#Condition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PoorCondition"/>
@@ -4004,27 +4025,6 @@ Amin Hammad</Literal>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#has"/>
             <Class IRI="#Mortar/Concrete"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Condition/State"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#dependsOn"/>
-            <Class IRI="#Severity"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Condition/State"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#has"/>
-            <Class IRI="#Condition/StateIssue"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Condition/StateIssue"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#causes"/>
-            <Class IRI="#FunctioningDefect"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
