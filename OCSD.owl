@@ -487,6 +487,9 @@ Amin Hammad</Literal>
         <Class IRI="#InitialSurfaceAbsorptionTest"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#InjectionMaterial"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#InspectionFrequency"/>
     </Declaration>
     <Declaration>
@@ -728,6 +731,9 @@ Amin Hammad</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="#ReinforcementExpansion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReinforcingFIber"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ReinforcingSteel"/>
@@ -1189,7 +1195,7 @@ Amin Hammad</Literal>
         <ObjectProperty IRI="#hasWorkOrder"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#include"/>
+        <ObjectProperty IRI="#includes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is"/>
@@ -1517,14 +1523,14 @@ Amin Hammad</Literal>
     <SubClassOf>
         <Class IRI="#As-inspectedModel"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#include"/>
+            <ObjectProperty IRI="#includes"/>
             <Class IRI="#DefectModel"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#As-inspectedModel"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#include"/>
+            <ObjectProperty IRI="#includes"/>
             <Class IRI="#InfrustructureModel"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -1830,6 +1836,13 @@ Amin Hammad</Literal>
     <SubClassOf>
         <Class IRI="#CrackFilling"/>
         <Class IRI="#ConcreteRepair/Replacement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrackFilling"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#InjectionMaterial"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CrackMeasuring"/>
@@ -2408,7 +2421,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GlassFiber"/>
-        <Class IRI="#Fiber-reinforcedPolymer"/>
+        <Class IRI="#ReinforcingFIber"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GoodCondition"/>
@@ -2616,6 +2629,10 @@ Amin Hammad</Literal>
             <ObjectProperty IRI="#has"/>
             <Class IRI="#SurfaceAbsorptionCharacteristic"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InjectionMaterial"/>
+        <Class IRI="#RepairMaterial"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InspectionFrequency"/>
@@ -3048,7 +3065,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PolymetricFiber"/>
-        <Class IRI="#Fiber-reinforcedPolymer"/>
+        <Class IRI="#ReinforcingFIber"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PolyurethaneCoating"/>
@@ -3182,6 +3199,31 @@ Amin Hammad</Literal>
         <Class IRI="#ProblemDuringOperation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ReinforcingFIber"/>
+        <Class IRI="#Fiber-reinforcedPolymer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReinforcingFIber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#GlassFiber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReinforcingFIber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#PolymetricFiber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReinforcingFIber"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#includes"/>
+            <Class IRI="#SteelFiber"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ReinforcingSteel"/>
         <Class IRI="#RepairMaterial"/>
     </SubClassOf>
@@ -3264,7 +3306,7 @@ Amin Hammad</Literal>
     <SubClassOf>
         <Class IRI="#RepairModel"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#include"/>
+            <ObjectProperty IRI="#includes"/>
             <Class IRI="#3RProcess"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -3285,6 +3327,13 @@ Amin Hammad</Literal>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#uses"/>
             <Class IRI="#ConcreteSurfaceSealer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResinInjection"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#uses"/>
+            <Class IRI="#InjectionMaterial"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -3465,6 +3514,13 @@ Amin Hammad</Literal>
         <Class IRI="#ConcreteRepair/Replacement"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ShotcretePlacement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Mortar/Concrete"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SilaneConcreteSealer"/>
         <Class IRI="#ConcreteSurfaceSealer"/>
     </SubClassOf>
@@ -3522,7 +3578,7 @@ Amin Hammad</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SteelFiber"/>
-        <Class IRI="#Fiber-reinforcedPolymer"/>
+        <Class IRI="#ReinforcingFIber"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Stratification"/>
@@ -4591,5 +4647,5 @@ http://www.sinaiconstruction.net/LA-foundation-retrofit-blog/wp-content/uploads/
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
